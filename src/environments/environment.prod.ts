@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  APIEndpoint: 'https://meetingroom-backend.herokuapp.com/api/v1/rooms'
 };

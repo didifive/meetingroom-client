@@ -27,10 +27,14 @@ Projeto desenvolvido com instruções de [Kamila Santos] na trilha de estudo do 
 
 Link da base utilizada neste projeto: [Kamilahsantos/Client-Angular-Live-Coding-Dio].
 
+---
+
 Instalação do Angular CLI:
 ```bash
 npm install -g @angular/cli
 ```
+
+---
 
 Abaixo seguem modificações feitas em relação ao projeto base:
 * O projeto foi iniciado com `ng new` e componentes criados com `ng g c`;

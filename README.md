@@ -39,11 +39,23 @@ npm install -g @angular/cli
 Abaixo seguem modificações feitas em relação ao projeto base:
 * O projeto foi iniciado com `ng new` e componentes criados com `ng g c`;
 * Como no backend foi criado novo atributo, neste projeto foi adicionado o atributo `link` no model `room.ts` e nos respectivos componentes `create-room`,`room-detais`, `room-list` e `update-room`;
-* Foi adicionado o atributo `APIEndpoint` em environments para disponibilizar para a aplicação em `room.service.ts` os links para ambiente de desenvolvimento (local) e de produção (conectando com o projeto hospedado no [Heroku]).
+* Foi adicionado o atributo `APIEndpoint` em environments para disponibilizar para a aplicação em `room.service.ts` os links para ambiente de desenvolvimento (local) e de produção (conectando com o projeto hospedado no [Heroku]);
+* Corrigido o link do item "Room List" da barra de navegação que fica no arquivo `app.component.html`.
 
 ---
 
-O backend utilizado neste projeto está em [didifive/meetingroom-backend].
+* Link Projeto Online: https://meetingroomclient.netlify.app/  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/53c4dc7a-b520-4621-9e9f-c94b3178c337/deploy-status)](https://app.netlify.com/sites/meetingroomclient/deploys)
+
+---
+
+Como o projeto foi feito com a base de dados H2 que fica em memória, quando a aplicação é reiniciada os dados são resetados (zerados), portanto para que exista uma lista é necessário fazer adição/cadastro pelo link "Add Room" disponível na barra de navegação da página, ou ir diretamente para o link [https://meetingroomclient.netlify.app/add](https://meetingroomclient.netlify.app/add).
+
+---
+
+O backend utilizado neste projeto está no repositório [didifive/meetingroom-backend].  
+Link do projeto disponível online no [Heroku]: [https://meetingroom-backend.herokuapp.com](https://meetingroom-backend.herokuapp.com/swagger-ui.html)  
+_Observação: Quando o projeto fica sem receber requisições por um tempo, automaticamente o Heroku coloca ele em modo dormir (sleepy), portanto caso ocorra erro de timeout, basta tentar novamente que deve estar ativo._
 
 ---
 
